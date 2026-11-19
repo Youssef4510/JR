@@ -397,8 +397,8 @@ header{transition:transform .3s ease}
  .mob.off{opacity:0;transform:translateY(24px);pointer-events:none}
  .bas-blanc{display:none}
 }
-/* Téléphone : la barre du bas n'est plus « fixée » à l'écran mais « accrochée » en bas de la page (position sticky).
-   Même apparence, elle suit toujours le défilement, mais Safari ne réserve plus de bande blanche pour elle. */
+/* Téléphone : barre du bas en bleu nuit plein (sans transparence ni ombre) : plus de bande blanche dans Safari (validé sur iPhone, test 1). */
 @media(max-width:860px){
- .mob{position:sticky;left:auto;right:auto;bottom:calc(14px + env(safe-area-inset-bottom));margin:-80px 16px 14px}
+ .mob{background:#0f2540;-webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:none;border-color:#0f2540}
+ .mob.off{opacity:0;transform:none;pointer-events:none}
 }
