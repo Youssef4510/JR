@@ -395,5 +395,5 @@ header{transition:transform .3s ease}
 @media(max-width:860px){
  .mob{transition:opacity .25s,transform .25s;box-shadow:0 6px 16px rgba(15,37,64,.18)}
  .mob.off{opacity:0;transform:translateY(24px);pointer-events:none}
- .bas-blanc{display:block;position:fixed;left:0;right:0;bottom:0;height:calc(env(safe-area-inset-bottom) + 2px);background:#fff;z-index:29;pointer-events:none}
+ .bas-blanc{display:none}
 }
